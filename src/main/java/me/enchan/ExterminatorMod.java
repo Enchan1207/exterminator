@@ -3,6 +3,7 @@ package me.enchan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import me.enchan.processors.ExterminatorModProcessors;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
@@ -22,6 +23,9 @@ public class ExterminatorMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        // カスタムプロセッサを登録する
+        ExterminatorModProcessors.initialize();
+
         // ore_infested をバイオームフィーチャから削除する
         BiomeModifications.create(Identifier.of(ModId, "remove_infested_ore")).add(ModificationPhase.REMOVALS,
                 BiomeSelectors.all(),
