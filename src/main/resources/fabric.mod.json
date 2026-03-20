@@ -13,7 +13,11 @@
 	"license": "MIT",
 	"icon": "assets/exterminator/icon.png",
 	"environment": "*",
-	"entrypoints": {},
+	"entrypoints": {
+		"main": [
+			"me.enchan.ExterminatorMod"
+		]
+	},
 	"mixins": [
 		"exterminator.mixins.json"
 	],
