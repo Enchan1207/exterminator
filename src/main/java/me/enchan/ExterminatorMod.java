@@ -13,7 +13,9 @@ import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.feature.PlacedFeature;
 
 public class ExterminatorMod implements ModInitializer {
-    public static final Logger Logger = LoggerFactory.getLogger("exterminator");
+    public static final String ModId = "exterminator";
+
+    public static final Logger Logger = LoggerFactory.getLogger(ModId);
 
     private static final RegistryKey<PlacedFeature> infestedOreFeatureKey = RegistryKey.of(RegistryKeys.PLACED_FEATURE,
             Identifier.of("minecraft", "ore_infested"));
@@ -21,7 +23,7 @@ public class ExterminatorMod implements ModInitializer {
     @Override
     public void onInitialize() {
         // ore_infested をバイオームフィーチャから削除する
-        BiomeModifications.create(Identifier.of("exterminator", "remove_infested_ore")).add(ModificationPhase.REMOVALS,
+        BiomeModifications.create(Identifier.of(ModId, "remove_infested_ore")).add(ModificationPhase.REMOVALS,
                 BiomeSelectors.all(),
                 ctx -> ctx.getGenerationSettings().removeFeature(infestedOreFeatureKey));
     }
