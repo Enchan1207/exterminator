@@ -23,7 +23,15 @@ Fabricの機能でMinecraftのソースをdecompileすることができます:
 ./gradlew genSources
 ```
 
-開発時はこれを実行しておくと、 `net.minecraft` 以下のソースを参照しやすくなります。
+これにより、 `net.minecraft` パッケージのソースをIDEから参照できるようになります。
+
+### Run client
+
+以下のコマンドで、MOD適用状態のMinecraftが起動します:
+
+```sh
+./gradlew runClient
+```
 
 ## References
 
