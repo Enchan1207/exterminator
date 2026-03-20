@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "anti_insects",
+	"id": "exterminator",
 	"version": "${version}",
 	"name": "Anti any insects",
 	"description": "Remove infested stone from stronghold, Prevent to spawn insects",
@@ -11,11 +11,11 @@
 		"sources": "https://github.com/Enchan1207/anti-insects"
 	},
 	"license": "MIT",
-	"icon": "assets/anti_insects/icon.png",
+	"icon": "assets/exterminator/icon.png",
 	"environment": "*",
 	"entrypoints": {},
 	"mixins": [
-		"anti_insects.mixins.json"
+		"exterminator.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.10",

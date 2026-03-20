@@ -1,15 +1,12 @@
-# Anti-insects
+# Exterminator
+
+REMOVE ALL BUGS FROM MINECRAFT!
 
 ## Overview
 
-虫系Mobの湧きを制限し、要塞から虫食いブロックおよびスポナーを削除する Fabric MOD
+_Exterminator_ is a Fabric MOD that eliminate all insects from Minecraft.
 
-## References
-
-- [FabricMC/fabric-example-mod](https://github.com/FabricMC/fabric-example-mod/tree/1.20)
-- [Setting up a mod development environment [Fabric Wiki]](https://fabricmc.net/wiki/tutorial:setup)
-- [Developer Guides | Fabric Documentation](https://docs.fabricmc.net/1.20.4/develop/)
-- 
+For development guide, see [DEVELOPMENT.md](./DEVELOPMENT.md).
 
 ## License
 
