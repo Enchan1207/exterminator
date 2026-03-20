@@ -8,7 +8,9 @@
 		"SilverfishEntityMixin",
 		"SpiderEntityMixin",
 		"CaveSpiderEntityMixin",
-		"IglooGeneratorPieceMixin"
+		"IglooGeneratorPieceMixin",
+		"WoodlandMansionGeneratorPieceMixin",
+		"FirstFloorRoomPoolMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
