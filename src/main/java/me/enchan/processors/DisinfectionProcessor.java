@@ -2,6 +2,7 @@ package me.enchan.processors;
 
 import com.mojang.serialization.MapCodec;
 
+import me.enchan.ExterminatorMod;
 import net.minecraft.block.InfestedBlock;
 import net.minecraft.structure.StructurePlacementData;
 import net.minecraft.structure.StructureTemplate;
@@ -33,6 +34,12 @@ public class DisinfectionProcessor extends StructureProcessor {
 
         // 感染ブロックを通常ブロックに戻す
         var disinfected = ((InfestedBlock) block).toRegularState(state);
+        ExterminatorMod.Logger
+                .info("構造物消毒: 座標 %s の %s を %s に置き換えました".formatted(
+                        currentBlockInfo.pos().toShortString(),
+                        block.getName().getString(),
+                        disinfected.getBlock().getName().getString()));
+
         return new StructureTemplate.StructureBlockInfo(currentBlockInfo.pos(), disinfected, currentBlockInfo.nbt());
     }
 
