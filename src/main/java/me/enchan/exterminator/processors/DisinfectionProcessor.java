@@ -1,8 +1,8 @@
-package me.enchan.processors;
+package me.enchan.exterminator.processors;
 
 import com.mojang.serialization.MapCodec;
 
-import me.enchan.ExterminatorMod;
+import me.enchan.exterminator.ExterminatorMod;
 import net.minecraft.block.InfestedBlock;
 import net.minecraft.structure.StructurePlacementData;
 import net.minecraft.structure.StructureTemplate;

@@ -1,9 +1,9 @@
-package me.enchan;
+package me.enchan.exterminator;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import me.enchan.processors.ExterminatorModProcessors;
+import me.enchan.exterminator.processors.ExterminatorModProcessors;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;

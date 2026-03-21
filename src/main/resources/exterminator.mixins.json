@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "me.enchan.mixin",
+	"package": "me.enchan.exterminator.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"StoneBrickRandomizerMixin",

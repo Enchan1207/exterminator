@@ -1,11 +1,11 @@
-package me.enchan.mixin;
+package me.enchan.exterminator.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import me.enchan.processors.DisinfectionProcessor;
+import me.enchan.exterminator.processors.DisinfectionProcessor;
 import net.minecraft.structure.IglooGenerator;
 import net.minecraft.structure.StructurePlacementData;
 import net.minecraft.util.BlockRotation;

@@ -1,11 +1,11 @@
-package me.enchan.mixin;
+package me.enchan.exterminator.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import me.enchan.ExterminatorMod;
+import me.enchan.exterminator.ExterminatorMod;
 import net.minecraft.util.math.random.Random;
 
 @Mixin(targets = "net.minecraft.structure.WoodlandMansionGenerator$FirstFloorRoomPool")

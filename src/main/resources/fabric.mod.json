@@ -2,20 +2,20 @@
 	"schemaVersion": 1,
 	"id": "exterminator",
 	"version": "${version}",
-	"name": "Anti any insects",
-	"description": "Remove infested stone from stronghold, Prevent to spawn insects",
+	"name": "Exterminator",
+	"description": "Remove infested stone from world, Prevent to spawn insects",
 	"authors": [
 		"Enchan1207"
 	],
 	"contact": {
-		"sources": "https://github.com/Enchan1207/anti-insects"
+		"sources": "https://github.com/Enchan1207/exterminator"
 	},
 	"license": "MIT",
 	"icon": "assets/exterminator/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"me.enchan.ExterminatorMod"
+			"me.enchan.exterminator.ExterminatorMod"
 		]
 	},
 	"mixins": [

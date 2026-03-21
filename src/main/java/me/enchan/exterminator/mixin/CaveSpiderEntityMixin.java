@@ -1,18 +1,18 @@
-package me.enchan.mixin;
+package me.enchan.exterminator.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import net.minecraft.entity.mob.SpiderEntity;
+import net.minecraft.entity.mob.CaveSpiderEntity;
 
-@Mixin(SpiderEntity.class)
-public abstract class SpiderEntityMixin {
+@Mixin(CaveSpiderEntity.class)
+public abstract class CaveSpiderEntityMixin {
 
     @Inject(method = "<init>", at = @At("RETURN"))
     private void beforeTick(CallbackInfo ci) {
-        ((SpiderEntity) (Object) this).discard();
+        ((CaveSpiderEntity) (Object) this).discard();
     }
 
 }
